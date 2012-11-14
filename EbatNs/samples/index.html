@@ -1,0 +1,131 @@
+<html>
+	<head>
+		<title>EbatNs Samples</title>
+	<style type="">
+	* {font-family: Verdana, Sans-Serif }
+	</style>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td colspan="3" style="white-space: nowrap;">
+					<h1>eBay Trading API</h1>
+				</td>
+				<td style="width: 200px;">
+					&nbsp;
+				</td>
+				<td style="white-space: nowrap;">
+					<H1>How to run the samples :</H1>
+				</td>
+			</tr>
+			<tr>
+				<td style="vertical-align: top;">
+					<a href="sample_AddDispute.php">AddDispute</a><br>
+					<a href="sample_AddDisputeResponse.php">AddDisputeResponse</a><br>
+					<a href="sample_AddItem.php">AddItem</a><br>
+					<a href="sample_AddItem_advanced.php">AddItem_advanced</a><br>
+					<a href="sample_AddItem_complex.php">AddItem_complex</a><br>
+					<a href="sample_AddLiveAuctionItem.php">AddLiveAuctionItem</a><br>
+					<a href="sample_AddToItemDescription.php">AddToItemDescription</a><br>
+					<a href="sample_AddToWatchList.php">AddToWatchList</a><br>
+					<a href="sample_EndItem.php">EndItem</a><br>
+					<a href="sample_GetAllBidders.php">GetAllBidders</a><br>
+					<a href="sample_GetApiAccessRules.php">GetApiAccessRules</a><br>
+					<a href="sample_GetAttributesCS.php">GetAttributesCS</a><br>
+					<a href="sample_GetAttributeSet.php">GetAttributeSet</a><br>
+					<a href="sample_GetAttributeSet_Rendered.php">GetAttributeSet_Rendered</a><br>
+					<a href="sample_GetAttributesXSL.php">GetAttributesXSL</a><br>
+					<a href="sample_GetBestOffers.php">GetBestOffers</a><br>
+					<a href="sample_GetBidderList.php">GetBidderList</a><br>
+					<a href="sample_GetCategories.php">GetCategories</a><br>
+					<a href="sample_GetCategory2CS.php">GetCategory2CS</a><br>
+					<a href="sample_GetCharities.php">GetCharities</a><br>
+					<a href="sample_GetDescriptionTemplates.php">GetDescriptionTemplates</a><br>
+					<a href="sample_GetDispute.php">GetDispute</a><br>
+					<a href="sample_GeteBayDetails.php">GeteBayDetails</a><br>
+					<a href="sample_GeteBayDetails_2.php">GeteBayDetails_2</a><br>
+					<a href="sample_GeteBayOfficialTime.php">GeteBayOfficialTime</a><br>
+					<a href="sample_GetFeedback.php">GetFeedback</a><br>
+					<a href="sample_GetHighBidders.php">GetHighBidders</a><br>
+					<a href="sample_GetItem.php">GetItem</a><br>
+					<a href="sample_GetItem_FeedExtension.php">GetItem_FeedExtension</a><br>
+				</td>
+				<td style="width: 30px;">
+					&nbsp;
+				</td>
+				<td style="vertical-align: top;">
+					<a href="sample_GetItem_OutputSelector.php">GetItem_OutputSelector</a><br>
+					<a href="sample_GetItemsAwaitingFeedback.php">GetItemsAwaitingFeedback</a><br>
+					<a href="sample_GetItemShipping.php">GetItemShipping</a><br>
+					<a href="sample_GetItemTransactions.php">GetItemTransactions</a><br>
+					<a href="sample_GetLiveAuctionBidders.php">GetLiveAuctionBidders</a><br>
+					<a href="sample_GetMyeBayBuying.php">GetMyeBayBuying</a><br>
+					<a href="sample_GetMyeBaySelling.php">GetMyeBaySelling</a><br>
+					<a href="sample_GetMyMessages.php">GetMyMessages</a><br>
+					<a href="sample_GetOrders.php">GetOrders</a><br>
+					<a href="sample_GetPopularKeywords.php">GetPopularKeywords</a><br>
+					<a href="sample_GetProducts.php">GetProducts</a><br>
+					<a href="sample_GetSearchResults.php">GetSearchResults</a><br>
+					<a href="sample_GetSellerList.php">GetSellerList</a><br>
+					<a href="sample_GetSellerTransactions.php">GetSellerTransactions</a><br>
+					<a href="sample_GetStore.php">GetStore</a><br>
+					<a href="sample_GetStoreOptions.php">GetStoreOptions</a><br>
+					<a href="sample_GetStorePreferences.php">GetStorePreferences</a><br>
+					<a href="sample_GetSuggestedCategories.php">GetSuggestedCategories</a><br>
+					<a href="sample_GetUser.php">GetUser</a><br>
+					<a href="sample_GetUserPreferences.php">GetUserPreferences</a><br>
+					<a href="sample_LeaveFeedback.php">LeaveFeedback</a><br>
+					<a href="sample_PlaceOffer.php">PlaceOffer</a><br>
+					<a href="sample_RelistItem.php">RelistItem</a><br>
+					<a href="sample_RemoveFromWatchList.php">RemoveFromWatchList</a><br>
+					<a href="sample_ReviseItem.php">ReviseItem</a><br>
+					<a href="sample_SetStore.php">SetStore</a><br>
+					<a href="sample_SetStorePreferences.php">SetStorePreferences</a><br>
+					<a href="sample_UploadSiteHostedPictures.php">UploadSiteHostedPictures</a><br>
+					<a href="sample_VerifyAddItem.php">VerifyAddItem</a><br>
+				</td>
+				<td>
+				</td>
+				<td style="vertical-align: top;">
+					<b>Things related to the general setup:</b><br>
+					<ul>
+					<li>
+						All samples include the file "setincludepath.php" which configures the
+						php include path to access to the EbatNs-toolkit files. You should change the file
+						and make modifications which match your setup.
+					</li>
+					<li>
+					Many samples might need extra modifications as they refer to ItemIDs, TransactionIDs, etc. which
+					might be already "been gone" when you try the sample. So please changes the input parameters 
+					for your needs.<br>
+					(Scripts like "GeteBayOfficialTime" do not need parameters, please try these first).
+					</li>
+					</ul>
+					<b>Things related to the eBay Developer Programm subscription:</b><br>
+					<ul>
+						<li>
+						Obtain your key-triple from <a href="developer.ebay.com" target="_new">developer.ebay.com</a>
+						</li>
+						<li>
+						Open the config-files (ebay.config.sandbox.php or ebay.config.php)<br>
+						Edit keys either to dev-key-test, app-key-test and cert-id-test (for sandbox-access) or
+						to the "-prod" fields for production-access.<br>
+						Be sure to quote (&quot;) the data to not mixup with php_ini_get. 
+						</li>
+						<li>
+						Choose your primary site-id for the API calls and place it to "site-id = xxx"
+						</li>
+						<li>
+						Choose your environment (sandbox or production) by setting "app-mode"
+						</li>
+						<li>
+						In case of the trading API you will need a token!<br>Goto the <a href="https://developer.ebay.com/DevZone/account/tokens/Default.aspx" target="_new">User Token Tool</a> (Be sure to be logged on before !)
+						<br>Place the Token (copy & paste) to a file and specify it the token section of the config-file.<br>
+						BE SURE NOT HAVING ANYTHINGELSE THAN THE TOKEN in the file (so so extra whitespaces, breaks, etc.)<br>
+						The file-name in the config-file is relative to the scripts current directory (use an absolute path if you are not sure what we talking about here).
+					</ul>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
